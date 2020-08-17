@@ -11,5 +11,5 @@ public interface UserService {
 
     List<AppUser> findByTeamId(long teamId);
 
-//    AppUser findByUserName(String userName);
+    AppUser findByUserName(String userName);
 }

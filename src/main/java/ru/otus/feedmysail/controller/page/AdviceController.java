@@ -1,6 +1,6 @@
 package ru.otus.feedmysail.controller.page;
 
-//import org.springframework.security.access.AccessDeniedException;
+import org.springframework.security.access.AccessDeniedException;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.servlet.ModelAndView;
@@ -39,12 +39,12 @@ public class AdviceController {
         return modelAndView;
     }
 
-//    @ExceptionHandler(AccessDeniedException.class)
-//    public ModelAndView handleAccessDeniedException(AccessDeniedException e) {
-//        ModelAndView modelAndView = new ModelAndView("error");
-//        modelAndView.addObject("message", "Доступ запрещен");
-//        return modelAndView;
-//    }
+    @ExceptionHandler(AccessDeniedException.class)
+    public ModelAndView handleAccessDeniedException(AccessDeniedException e) {
+        ModelAndView modelAndView = new ModelAndView("error");
+        modelAndView.addObject("message", "Доступ запрещен");
+        return modelAndView;
+    }
 
     @ExceptionHandler(Exception.class)
     public ModelAndView handleException(Exception e) {
