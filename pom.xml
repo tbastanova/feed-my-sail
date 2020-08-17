@@ -11,6 +11,7 @@
     <groupId>ru.otus</groupId>
     <artifactId>feed-my-sail</artifactId>
     <version>0.0.1-SNAPSHOT</version>
+    <packaging>war</packaging>
     <name>feed-my-sail</name>
     <description>Form food list for sail team</description>
 
