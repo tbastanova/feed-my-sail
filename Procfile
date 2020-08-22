@@ -1,1 +1,1 @@
-web java -jar target/feed-my-sail.jar
+web:    java $JAVA_OPTS -Dspring.profiles.active="postgres,heroku" -jar target/dependency/webapp-runner.jar --port $PORT target/*.war
