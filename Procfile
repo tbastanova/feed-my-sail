@@ -1,1 +1,0 @@
-web:    java $JAVA_OPTS -Dspring.profiles.active="postgres,heroku" -jar feed-my-sail/target/feed-my-sail.jar
