@@ -1,1 +1,1 @@
-web java -jar feed-my-sail/target/feed-my-sail.jar
+web java -jar target/feed-my-sail.jar
